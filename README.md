@@ -29,3 +29,5 @@ roslaunch plan_manage rviz.launch
  ```bash
  roslaunch plan_manage topo_replan.launch # Полет по прямой
  ```  
+## Исходный проект-алгоритм:  
+[Fast-Planner](https://github.com/HKUST-Aerial-Robotics/Fast-Planner)
