@@ -1,4 +1,6 @@
 #!/bin/bash
+cd ~/
+
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
 sudo apt install -y --fix-missing  curl # if you haven't already installed curl
