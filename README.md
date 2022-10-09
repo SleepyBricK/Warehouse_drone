@@ -7,11 +7,15 @@
 ```bash
 git clone https://github.com/petayyyy/Warehouse_drone.git
 ```
-**Если не установлен гит то выполнить команды:  
+**Если не установлен git то выполнить команды:  
 ```bash
  sudo apt update  
  sudo apt install -y --fix-missing git
  ```  
+*Перейти в директорию с установочным файлом:  
+```bash
+cd Warehouse_drone
+```  
 *Запустить установочный файл:
 ```bash
 bash build_simulator.sh
