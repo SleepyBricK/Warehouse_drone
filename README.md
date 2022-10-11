@@ -46,4 +46,5 @@ sudo apt install ros-melodic-realsense2-camera ros-melodic-realsense2-camera-dbg
 roslaunch realsense2_camera demo_pointcloud.launch
  ```  
  В rviz мы меняем параметры, на такие же, которые стоят в госе, чтобы было вот так:
+ 
 ![image](https://user-images.githubusercontent.com/31032527/195205989-6eaafcf6-48f3-4573-876e-b63b682279f7.png)
