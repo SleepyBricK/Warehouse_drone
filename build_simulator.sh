@@ -34,17 +34,10 @@ git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
 
 cd ../ 
 
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 catkin_make
 
-text="source ~/catkin_ws/devel/setup.bash"
-name=`tail -1 '.bashrc'`
-if [[ $name == $text ]] ; then
-    echo "OK"
-else 
-    echo $text >> '.bashrc'
-fi
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 source ~/.bashrc
