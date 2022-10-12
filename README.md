@@ -35,6 +35,7 @@ roslaunch plan_manage rviz.launch
  ```  
 ## Исходный проект-алгоритм:  
 [Fast-Planner](https://github.com/HKUST-Aerial-Robotics/Fast-Planner)
+[build_realsense_gazebo](https://www.youtube.com/watch?v=hpUCG6K5muI&ab_channel=RangelAlvarado)
 
 
 ## Установка realsense в ros  
