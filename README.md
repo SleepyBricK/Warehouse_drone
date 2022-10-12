@@ -61,4 +61,8 @@ add_dependencies(multi_map_visualization multi_map_server_messages_cpp)
 на эту:
 ```bash  
 add_dependencies(multi_map_visualization multi_map_server_messages_cpp multi_map_server_generate_messages_cpp)
+```  
+____________________  
+```bash
+sudo -H pip install jinja2
 ```
