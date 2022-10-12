@@ -37,7 +37,7 @@ roslaunch plan_manage rviz.launch
 [Fast-Planner](https://github.com/HKUST-Aerial-Robotics/Fast-Planner)
 
 
-Установка realsense в ros  
+## Установка realsense в ros  
 ```bash
 sudo apt install ros-melodic-realsense2-camera ros-melodic-realsense2-camera-dbgsym ros-melodic-realsense2-description 
  ```  
