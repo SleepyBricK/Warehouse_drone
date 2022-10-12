@@ -49,3 +49,16 @@ roslaunch realsense2_camera demo_pointcloud.launch
  В rviz мы меняем параметры, на такие же, которые стоят в госе, чтобы было вот так:
  
 ![image](https://user-images.githubusercontent.com/31032527/195205989-6eaafcf6-48f3-4573-876e-b63b682279f7.png)
+## Возможные ошибки при сборке  
+Не добавлены зависимости для генерации сообщений  
+```bash  
+sudo nano ~/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/CMakeLists.txt
+```
+Заменить строку (163):
+```bash  
+add_dependencies(multi_map_visualization multi_map_server_messages_cpp)
+```
+на эту:
+```bash  
+add_dependencies(multi_map_visualization multi_map_server_messages_cpp multi_map_server_generate_messages_cpp)
+```
