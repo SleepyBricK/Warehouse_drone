@@ -146,7 +146,7 @@ def load_model(weights_file, config_file, input_size=(416, 416)):
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument('-s', '--source', default='0', type=str)
+    parser.add_argument('-s', '--source', default=str(SOURCE), type=str)
     parser.add_argument('-w', '--weights', default=yolo_weights)
     parser.add_argument('-c', '--config', default=yolo_config)
     parser.add_argument('--face_config', default=face_detector_config)
