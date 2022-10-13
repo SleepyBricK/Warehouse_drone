@@ -34,8 +34,10 @@ roslaunch plan_manage rviz.launch
  roslaunch plan_manage topo_replan.launch # Полет по прямой
  ```  
 ## Исходный проект-алгоритм:  
-[Fast-Planner](https://github.com/HKUST-Aerial-Robotics/Fast-Planner)
-[build realsense gazebo](https://www.youtube.com/watch?v=hpUCG6K5muI&ab_channel=RangelAlvarado)
+[Fast-Planner](https://github.com/HKUST-Aerial-Robotics/Fast-Planner)  
+ 
+[build realsense gazebo](https://www.youtube.com/watch?v=hpUCG6K5muI&ab_channel=RangelAlvarado)  
+
 [buimd map gazebo](https://github.com/mit-acl/swarm_simulator)
 
 ## Установка realsense в ros  
