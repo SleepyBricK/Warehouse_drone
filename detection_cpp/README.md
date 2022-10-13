@@ -46,6 +46,7 @@ wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/ha
 cd ..
 ```
 
+### Скачиваем программы для детекции
 Скачиваем файл `inference_threaded.cpp` и `CMakeLists.txt` в какую-нибудь папку.
 
 ```shell
