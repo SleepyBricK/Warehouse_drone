@@ -51,5 +51,5 @@ python3 inference_target_face.py -s 0 -p -f -w /home/clover/yolov4/yolov4-tiny.w
 ```shell
 # запуск детектора на видео 'video.mp4' с детекцией людей, лиц и целей.
 # ещё размер каждого кадра уменьшится в 1.5 раза
-python3 inference_target_face.py -s "video.mp4" -p -f -t -id 1.5 -w /home/clover/yolov4/yolov4-tiny.weights -c /home/clover/yolov4/yolov4-tiny.cfg --face_config /home/clover/yolov4/haarcascade_frontalface_default.xml
+python3 inference_target_face.py -s "video.mp4" -p -f -t -d 1.5 -w /home/clover/yolov4/yolov4-tiny.weights -c /home/clover/yolov4/yolov4-tiny.cfg --face_config /home/clover/yolov4/haarcascade_frontalface_default.xml
 ```
