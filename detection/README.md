@@ -58,6 +58,6 @@ python3 inference_target_face.py -s "video.mp4" -p -f -t -d 1.5 -w /home/clover/
 ```bash
 sudo apt-get install python3-pip python3-yaml
 sudo pip3 install rospkg catkin_pkg
-pip3 install opencv-python
+pip3 install opencv-contrib-python
 sudo apt-get install libatlas-base-dev
 ```
