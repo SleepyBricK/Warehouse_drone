@@ -53,3 +53,11 @@ python3 inference_target_face.py -s 0 -p -f -w /home/clover/yolov4/yolov4-tiny.w
 # ещё размер каждого кадра уменьшится в 1.5 раза
 python3 inference_target_face.py -s "video.mp4" -p -f -t -d 1.5 -w /home/clover/yolov4/yolov4-tiny.weights -c /home/clover/yolov4/yolov4-tiny.cfg --face_config /home/clover/yolov4/haarcascade_frontalface_default.xml
 ```
+## Запуск на ROS  
+для билда нужно поставить зависимости 3 Python  
+```bash
+sudo apt-get install python3-pip python3-yaml
+sudo pip3 install rospkg catkin_pkg
+pip3 install opencv-python
+sudo apt-get install libatlas-base-dev
+```
