@@ -237,7 +237,7 @@ if __name__ == '__main__':
         fps_label = f"FPS: {fps} (detection takes: {detection_takes} s; {inference_fps} FPS)"
 
         cv2.putText(labeled_frame, fps_label, (0, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
-        cv2.imshow("detections", labeled_frame)
+        #cv2.imshow("detections", labeled_frame)
         try:
           pub.publish(bridge.cv2_to_imgmsg(labeled_frame, 'bgr8'))
         except: pass
