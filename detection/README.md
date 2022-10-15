@@ -56,10 +56,9 @@ python3 inference_target_face.py -s "video.mp4" -p -f -t -d 1.5 -w /home/clover/
 ## Запуск на ROS  
 для билда нужно поставить зависимости 3 Python  
 ```bash
-sudo apt-get install python3-pip python3-yaml
+sudo apt-get install -y --fix-missing python3-pip python3-yaml
 sudo pip3 install rospkg catkin_pkg
 pip3 install  --no-cache-dir opencv-contrib-python
-sudo apt-get install libatlas-base-dev
 pip3 install -U numpy
-sudo apt-get install -y libatlas-base-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev  libqtgui4  libqt4-test
+sudo apt-get install -y --fix-missing libatlas-base-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev  libqtgui4  libqt4-test
 ```
