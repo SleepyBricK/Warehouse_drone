@@ -68,7 +68,33 @@ ____________________
 ```bash
 sudo -H pip install jinja2
 ```
-## Дрон теряет управление в симуляторе:
+## Сборка симулятора:
+Установите файлы симуляции Realsense:
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/issaiass/realsense2_description
+git clone https://github.com/issaiass/realsense_gazebo_plugin
+cd ..
+catkin_make
+```
+Измените файл спавна дрона clover/clover_description/launch/spawn_drone.launch добавив строчки:
+```bash
+<node pkg="robot_state_publisher" type="robot_state_publisher"  name="robot_state_publisher">
+  <param name="publish_frequency" type="double" value="30.0" />
+</node>
+```
+Измените файл гененрации компонентов дрона clover/clover_description/urdf/clover/clover4.xacro добавив строчки:
+```bash
+<xacro:arg name="d455" default="true"/>
+<xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro"/>
+
+<xacro:if value="$(arg d455)">
+  <xacro:sensor_d435 name="camera" topics_ns="camera" parent="base_link" publish_pointcloud="true">
+    <origin xyz="0 0 0.2" rpy="0 0 0" />
+  </xacro:sensor_d435>
+</xacro:if>
+```
+## !!!!!!!!!!!!!!!!!!!!!!Дрон теряет управление в симуляторе:
 Отключите вес у камеры. ждя этого откройте файл realsense2_description/urdf/_d435.gazebo.xacro и измените значение с 1 на 0 на 20 строке:  
 ```bash
 <gravity>0</gravity>
