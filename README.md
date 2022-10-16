@@ -68,3 +68,8 @@ ____________________
 ```bash
 sudo -H pip install jinja2
 ```
+## Дрон теряет управление в симуляторе:
+Отключите вес у камеры. ждя этого откройте файл realsense2_description/urdf/_d435.gazebo.xacro и измените значение с 1 на 0 на 20 строке:  
+```bash
+<gravity>0</gravity>
+```
