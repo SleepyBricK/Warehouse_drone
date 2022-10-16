@@ -61,4 +61,5 @@ sudo pip3 install rospkg catkin_pkg
 pip3 install  --no-cache-dir opencv-contrib-python
 pip3 install -U numpy
 sudo apt-get install -y --fix-missing libatlas-base-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev  libqtgui4  libqt4-test
+pip install  opencv-python --upgrade
 ```
