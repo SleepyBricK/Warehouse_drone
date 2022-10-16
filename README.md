@@ -1,4 +1,6 @@
 # Warehouse_drone
+## Готовый симулятор:
+https://drive.google.com/file/d/1m_P_oT-o55lH2-66dkMkkzMTlMlx9TSq/view?usp=sharing
 ## Для установки симулятора необходимо:  
 *Устаноить приложение [VMware](https://www.vmware.com/go/getworkstation-win).  
 *Уcтановить образ [ubuntu 18.04](https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso).  
