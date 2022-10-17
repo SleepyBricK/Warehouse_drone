@@ -71,6 +71,8 @@ ____________________
 sudo -H pip install jinja2
 ```
 ## Сборка симулятора:
+https://clovervm.ams3.digitaloceanspaces.com/clover-devel_v0.3.ova  
+
 Установите файлы симуляции Realsense:
 ```bash
 cd ~/catkin_ws/src
