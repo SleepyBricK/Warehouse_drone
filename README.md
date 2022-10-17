@@ -40,7 +40,9 @@ roslaunch plan_manage rviz.launch
  
 [build realsense gazebo](https://www.youtube.com/watch?v=hpUCG6K5muI&ab_channel=RangelAlvarado)  
 
-[buimd map gazebo](https://github.com/mit-acl/swarm_simulator)
+[buimd map gazebo](https://github.com/mit-acl/swarm_simulator)  
+
+https://github.com/mzahana/px4_fast_planner
 
 ## Установка realsense в ros  
 ```bash
