@@ -57,6 +57,8 @@ roslaunch realsense2_camera demo_pointcloud.launch
 ![image](https://user-images.githubusercontent.com/31032527/195205989-6eaafcf6-48f3-4573-876e-b63b682279f7.png)
 ## Возможные ошибки при сборке  
 Если команда catkin_make не найдено, то закройте терминал и откройте его заного. И потоврите действие заново.
+
+
 Не добавлены зависимости для генерации сообщений  
 ```bash  
 sudo nano ~/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/CMakeLists.txt
