@@ -109,7 +109,7 @@ catkin_make
 <gravity>0</gravity>
 ```
 
-##Измените файлов, чтобы менять топики:
+## Измените файлов, чтобы менять топики:
 Файл Fast-Planner-master\fast_planner\plan_manage\src\traj_server.cpp - ```bash clover_cmd_pub``` публикация в топик значений траекторий полета с rviz`а
 ```bash
 clover_cmd_pub = node.advertise<geometry_msgs::PoseStamped>("mavros/setpoint_position/local", 50);
