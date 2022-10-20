@@ -117,11 +117,8 @@ clover_cmd_pub = node.advertise<geometry_msgs::PoseStamped>("mavros/setpoint_pos
 Файл Fast-Planner-master\fast_planner\plan_manage\launch\kino_replan.launch - ```bash cloud_topic``` - менйем на топик, куда присылает реальный realsense
 И там же параметры ```bash max_vel``` и ```bash max_acc``` - максимальная скорость и ускорение, которых может достичь дрон
 ```bash 
-    <!-- topic of point cloud measurement, such as from LIDAR  -->
-    <!-- don't set camera pose and depth, if you already set this one! -->
     <arg name="cloud_topic" value="/camera/depth/color/points"/>
     
-    <!-- maximum velocity and acceleration the drone will reach -->
     <arg name="max_vel" value="1.0" />
     <arg name="max_acc" value="0.5" />
 ```
