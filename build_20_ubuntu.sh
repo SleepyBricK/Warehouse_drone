@@ -2,7 +2,6 @@
 cd ~/
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-
 sudo apt install -y --fix-missing  curl # if you haven't already installed curl
 
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
@@ -39,25 +38,23 @@ source ~/.bashrc
 cd ~/catkin_ws
 ls
 cd src/
-sudo apt install catkin
-sudo apt-get install ros-noetic-catkin python-catkin-tools 
+sudo apt install -y catkin
+sudo apt-get install -y ros-noetic-catkin python-catkin-tools 
 
 sudo apt remove python-catkin-pkg
-sudo apt install python-catkin-pkg
+sudo apt install -y python-catkin-pkg
 
-sudo apt-get install ros-melodic-desktop-full
+sudo apt-get install -y ros-noetic-cv-camera
+sudo apt-get install -y ros-noetic-web-video-server
+sudo apt-get install -y ros-noetic-mavros ros-noetic-mavros-extras
+sudo apt-get install -y python-rospy
+sudo apt-get install -y python3-rospy
+sudo apt install -y libopencv-dev
+sudo apt-get install -y ros-noetic-usb-cam
 
-sudo apt-get install ros-noetic-cv-camera
-sudo apt-get install ros-noetic-web-video-server
-sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
-sudo apt-get install python-rospy
-sudo apt-get install python3-rospy
-sudo apt install libopencv-dev
-sudo apt-get install ros-noetic-usb-cam
+sudo apt install -y ros-noetic-realsense2-camera ros-noetic-realsense2-camera-dbgsym ros-noetic-realsense2-description 
 
-sudo apt install ros-melodic-realsense2-camera ros-melodic-realsense2-camera-dbgsym ros-melodic-realsense2-description 
-
-sudo apt-get install ros-noetic-tf2-ros
+sudo apt-get install -y ros-noetic-tf2-ros
 cd ~/catkin_ws/src
 git clone https://github.com/RobotWebTools/tf2_web_republisher
 
