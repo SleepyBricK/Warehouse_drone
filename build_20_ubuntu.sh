@@ -9,11 +9,11 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 
 sudo apt update
 
-sudo apt install -y --fix-missing  ros-melodic-desktop-full
+sudo apt install -y --fix-missing  ros-noetic-desktop-full
 
-apt search ros-melodic
+apt search ros-noetic
 
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt install -y --fix-missing python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
@@ -28,7 +28,7 @@ mkdir -p ~/catkin_ws/src
 
 cd ~/catkin_ws/src
 
-sudo apt-get install -y --fix-missing libarmadillo-dev ros-melodic-nlopt
+sudo apt-get install -y --fix-missing libarmadillo-dev ros-noetic-nlopt
 
 git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
 
