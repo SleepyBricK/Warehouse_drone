@@ -54,6 +54,7 @@ sudo apt install -y ros-noetic-tf2-geometry-msgs
 sudo apt install -y ros-noetic-laser-geometry
 sudo apt install -y ros-noetic-rviz
 sudo apt install -y ros-noetic-led-msgs
+sudo apt install -y ros-noetic-rosbridge-server
 
 sudo apt-get install -y python-rospy
 sudo apt-get install -y python3-rospy
