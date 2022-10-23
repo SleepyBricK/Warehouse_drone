@@ -47,6 +47,14 @@ sudo apt install -y python-catkin-pkg
 sudo apt-get install -y ros-noetic-cv-camera
 sudo apt-get install -y ros-noetic-web-video-server
 sudo apt-get install -y ros-noetic-mavros ros-noetic-mavros-extras
+sudo apt install -y ros-noetic-pcl-conversions
+sudo apt install -y ros-noetic-cmake-modules
+sudo apt install -y ros-noetic-pcl-ros
+sudo apt install -y ros-noetic-tf2-geometry-msgs
+sudo apt install -y ros-noetic-laser-geometry
+sudo apt install -y ros-noetic-rviz
+sudo apt install -y ros-noetic-led-msgs
+
 sudo apt-get install -y python-rospy
 sudo apt-get install -y python3-rospy
 sudo apt install -y libopencv-dev
