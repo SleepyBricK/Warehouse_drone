@@ -10,6 +10,7 @@ https://drive.google.com/file/d/1m_P_oT-o55lH2-66dkMkkzMTlMlx9TSq/view?usp=shari
  sudo apt update  
  sudo apt install -y --fix-missing git
  ```  
+ https://github.com/Iliaaer/Fast-Planner/tree/master/fast_planner/plan_manage
 *Установить этот репозиторий:  
 ```bash
 git clone https://github.com/petayyyy/Warehouse_drone.git
