@@ -27,8 +27,17 @@ cd ~/catkin_ws/src
 
 sudo apt-get install -y libarmadillo-dev
 
-git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
+sudo apt install -y cmake
 
+https://github.com/Iliaaer/Fast-Planner.git
+
+git clone https://github.com/stevengj/nlopt.git
+cd nlopt
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
 cd ../ 
 
 source ~/.bashrc
@@ -86,5 +95,6 @@ source ~/.bashrc
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 cd ~/catkin_ws
-catkin_make
-#sudo apt-get install qv4l2
+
+catkin_make -DCMAKE_CXX_STANDARD=14
+sudo apt-get install qv4l2
