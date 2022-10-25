@@ -24,3 +24,15 @@ make
 ```shell
 ./detection --weights=/home/clover/weights/yolov4-tiny.weights --config=/home/clover/weights/yolov4-tiny.cfg --topic_in=/cam_pub --topic_out=/detections
 ```
+
+### Установка Dlib и Face Recognition 
+
+```
+git clone https://github.com/davisking/dlib.git
+
+cd dlib
+
+sudo python3 setup.py install
+
+pip3 install face_recognition
+```
