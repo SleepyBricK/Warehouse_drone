@@ -2,22 +2,20 @@
 cd ~/
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt install -y --fix-missing  curl # if you haven't already installed curl
+sudo apt install -y curl # if you haven't already installed curl
 
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 
 sudo apt update
 
-sudo apt install -y --fix-missing  ros-noetic-desktop-full
+sudo apt install -y ros-noetic-desktop-full
 
 apt search ros-noetic
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
-sudo apt install -y --fix-missing python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-
-sudo apt install -y --fix-missing  python-rosdep
+sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 
 rosdep update
 
@@ -27,7 +25,7 @@ mkdir -p ~/catkin_ws/src
 
 cd ~/catkin_ws/src
 
-sudo apt-get install -y --fix-missing libarmadillo-dev ros-noetic-nlopt
+sudo apt-get install -y libarmadillo-dev
 
 git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
 
@@ -39,10 +37,10 @@ cd ~/catkin_ws
 ls
 cd src/
 sudo apt install -y catkin
-sudo apt-get install -y ros-noetic-catkin python-catkin-tools 
+sudo apt-get install -y ros-noetic-catkin python3-catkin-tools 
 
-sudo apt remove python-catkin-pkg
-sudo apt install -y python-catkin-pkg
+sudo apt remove python3-catkin-pkg
+sudo apt install -y python3-catkin-pkg
 
 sudo apt-get install -y ros-noetic-cv-camera
 sudo apt-get install -y ros-noetic-web-video-server
