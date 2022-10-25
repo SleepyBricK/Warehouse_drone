@@ -42,13 +42,11 @@ cd ../
 
 source ~/.bashrc
 
-cd ~/catkin_ws
-ls
-cd src/
+cd ~/catkin_ws/src
 sudo apt install -y catkin
 sudo apt-get install -y ros-noetic-catkin python3-catkin-tools 
 
-sudo apt remove python3-catkin-pkg
+sudo apt remove -y python3-catkin-pkg
 sudo apt install -y python3-catkin-pkg
 
 sudo apt-get install -y ros-noetic-cv-camera
