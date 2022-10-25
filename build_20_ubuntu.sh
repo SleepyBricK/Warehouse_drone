@@ -69,16 +69,14 @@ sudo apt-get install -y ros-noetic-usb-cam
 sudo apt install -y ros-noetic-realsense2-camera ros-noetic-realsense2-camera-dbgsym ros-noetic-realsense2-description 
 
 sudo apt-get install -y ros-noetic-tf2-ros
-cd ~/catkin_ws/src
 git clone https://github.com/RobotWebTools/tf2_web_republisher
 
-cd ~/catkin_ws/src
 git clone https://github.com/CopterExpress/clover.git clover
 
 cd ~/catkin_ws/src/clover/clover/udev
 sudo cp 99-px4fmu.rules /lib/udev/rules.d
 
-cd ~
+cd ~/catkin_ws/src
 curl https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh | sudo bash
 chmod a+x ./install_geographiclib_datasets.sh
 
