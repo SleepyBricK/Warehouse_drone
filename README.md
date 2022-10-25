@@ -10,7 +10,8 @@ https://drive.google.com/file/d/1m_P_oT-o55lH2-66dkMkkzMTlMlx9TSq/view?usp=shari
  sudo apt update  
  sudo apt install -y --fix-missing git
  ```  
- https://github.com/Iliaaer/Fast-Planner/tree/master/fast_planner/plan_manage
+ https://github.com/Iliaaer/Fast-Planner/
+ 
 *Установить этот репозиторий:  
 ```bash
 git clone https://github.com/petayyyy/Warehouse_drone.git
@@ -51,7 +52,7 @@ sudo apt install ros-melodic-realsense2-camera ros-melodic-realsense2-camera-dbg
  ```  
  Далее, чтобы запустить realsense в rviz :  
  ```bash
-roslaunch realsense2_camera demo_pointcloud.launch
+roslaunch realsense2_camera rs_camera.launch filters:=pointcloud
  ```  
  В rviz мы меняем параметры, на такие же, которые стоят в госе, чтобы было вот так:
  
