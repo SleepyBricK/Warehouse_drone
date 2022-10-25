@@ -94,3 +94,4 @@ cd ~/catkin_ws
 
 catkin_make -DCMAKE_CXX_STANDARD=14
 sudo apt-get install qv4l2
+sudo apt install -y ros-noetic-rosserial-python 
