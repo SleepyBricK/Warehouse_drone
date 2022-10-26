@@ -1,4 +1,5 @@
 # Warehouse_drone
+https://tokmakov.msk.ru/blog/item/494?ysclid=l9prlwtn9x96217772
 ## Готовый симулятор:
 https://drive.google.com/file/d/1m_P_oT-o55lH2-66dkMkkzMTlMlx9TSq/view?usp=sharing
 ## Запуск arduino:
