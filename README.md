@@ -5,6 +5,10 @@ https://drive.google.com/file/d/1m_P_oT-o55lH2-66dkMkkzMTlMlx9TSq/view?usp=shari
 ```bash
 rosrun rosserial_python serial_node.py /dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0 _baud:=115200
 ```
+## Запуск пакета clover:
+```bash
+roslaunch clover clover.launch 
+```
 ## Для установки симулятора необходимо:  
 *Устаноить приложение [VMware](https://www.vmware.com/go/getworkstation-win).  
 *Уcтановить образ [ubuntu 18.04](https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso).  
